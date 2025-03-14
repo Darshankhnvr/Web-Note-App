@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import EmptyState from "./empty-state";
 import { Note } from "@/lib/types";
@@ -55,7 +54,7 @@ export default function NotesSidebar({
                         {note.content.length > 40 ? "..." : ""}
                       </p>
                       <p className="text-sm text-muted-foreground">
-                        {formatDate(note.createdAt)}
+                        {formatDate(Number(note.createdAt))}
                       </p>
                     </div>
                     <Button
